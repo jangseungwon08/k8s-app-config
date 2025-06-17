@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: Always
         env:
         - name: SPRING_PROFILES_ACTIVE
-          value: prd
+          value: dev
         ports:
         - containerPort: 8080
 
@@ -33,8 +33,8 @@ spec:
           configMap:
             name: api-gateway-config
             items:
-              - key: application-prd.yml
-                path: application-prd.yml
+              - key: application-dev.yml
+                path: application-dev.yml
         - name: api-gateway-secret-volume
           secret:
             secretName: api-gateway-secret
