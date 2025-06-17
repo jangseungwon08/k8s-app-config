@@ -23,4 +23,4 @@ data:
               - id: backend-post
                 uri: http://k8s-backend-post-service:8080
                 predicates:
-                  - Path=/api/post/*
+                  - Path=/api/post/**

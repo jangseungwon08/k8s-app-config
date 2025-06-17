@@ -40,4 +40,4 @@ spec:
             secretName: api-gateway-secret
             items:
               - key: application-secret.yml
-                path: application-secret.ym
+                path: application-secret.yml
